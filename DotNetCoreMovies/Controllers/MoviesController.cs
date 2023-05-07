@@ -48,11 +48,8 @@ namespace DotNetCoreMovies.Controllers
                 var data = await unitOfWork.Movies.AddAsync(movie);
                 return Ok(data);
             }
-    
-
-
-            
         }
+
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
